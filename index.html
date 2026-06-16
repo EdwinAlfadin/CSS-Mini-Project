@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto Slab", serif;
+      }
+      header {
+        background: rgb(52, 54, 202);
+        background: linear-gradient(
+          -45deg,
+          #ee7752 0%,
+          #e73c7e 50%,
+          #23a6d5 100%
+        );
+        padding: 20px;
+      }
+      .headerContainer {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .contentHolder {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .imgProfile {
+        width: 200px;
+        height: 200px;
+        border: 5px solid rgb(16, 149, 167);
+        border-radius: 100%;
+        box-shadow: 5px 5px 10px 2px rgba(197, 19, 173, 0.485);
+        transition: all;
+        transition-duration: 1s;
+      }
+      .imgProfile:hover {
+        margin-left: -10px;
+      }
+      .holderImgProfile {
+        flex: 1;
+        text-align: center;
+      }
+      .holderDetailProfile {
+        flex: 2;
+      }
+      .nameProfile {
+        font-size: 48px;
+        color: rgb(20, 14, 14);
+        font-weight: 600;
+      }
+      .titleProfile {
+        color: white;
+        font-size: 36px;
+      }
+      .button {
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 10px 0 0;
+        font-family: "Roboto Slab", serif;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all;
+        transition-duration: 1s;
+      }
+      .button.download {
+        background-color: #b8ee25;
+        color: rgb(43, 43, 43);
+        cursor: pointer;
+      }
+      .button.hire {
+        background-color: #4824e7;
+        color: white;
+        cursor: pointer;
+      }
+      .button:hover {
+        transform: scale(1.1);
+      }
+      .barContainer {
+        width: 100%;
+        height: 20px;
+        border-radius: 20px;
+        background-color: rgb(187, 184, 184);
+        position: relative;
+      }
+      .barFilling {
+        position: absolute;
+        height: 20px;
+        border-radius: 20px;
+        transition: all;
+        transition-duration: 1s;
+      }
+      .green {
+        background-color: rgb(8, 241, 39);
+        width: 80%;
+      }
+      .orange {
+        background-color: rgb(241, 170, 15);
+        width: 75%;
+      }
+      .purple {
+        background-color: rgb(226, 44, 243);
+        width: 65%;
+      }
+      .subContent {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(90, 90, 90);
+      }
+      h3 {
+        font-weight: 600;
+      }
+      .skillBar {
+        display: block;
+        margin: 10px 0;
+      }
+      ul.workEx li {
+        font-size: 20px;
+        padding: 10px 0;
+      }
+      ul.workEx li:first-child {
+        padding-top: 0;
+      }
+      span strong {
+        color: #3330ec;
+      }
+      .subWorkEx {
+        font-size: 16px;
+        color: rgb(82, 81, 81);
+        font-weight: 600;
+      }
+      footer {
+        background-color: rgb(86, 241, 80);
+        text-align: center;
+      }
+      .footerHolder {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      .footerName {
+        font-size: 20px;
+        font-weight: 400;
+        color: rgb(12, 9, 9);
+      }
+    </style>
+    <title>CSS Mini Project</title>
+  </head>
+  <header>
+    <div class="headerContainer">
+      <div class="holderImgProfile">
+        <img class="imgProfile" src="Pasfoto.jpg" />
+      </div>
+      <div class="holderDetailProfile">
+        <div class="nameProfile">Ahmad Edwin Alfadin</div>
+        <div class="titleProfile">Frontend Developer</div>
+        <div>
+          <button class="button download">Download CV</button>
+          <button class="button hire">Hire Me</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="contentHolder">
+      <div>
+        <h1>About Me</h1>
+        <div class="subContent">
+          Hello! I'm Ahmad Edwin Alfadin. I am passionate about building
+          responsive, interactive, and user-friendly website. I enjoy learning
+          new technologies and solving challenges to create better digital
+          experiences.
+        </div>
+      </div>
+      <div>
+        <h1>Profesional Skill</h1>
+        <div class="skillBar">
+          <h3>HTML</h3>
+          <div class="barContainer">
+            <div class="barFilling green"></div>
+          </div>
+        </div>
+        <div class="skillBar">
+          <h3>CSS</h3>
+          <div class="barContainer">
+            <div class="barFilling orange"></div>
+          </div>
+        </div>
+        <div class="skillBar">
+          <h3>JavaScript</h3>
+          <div class="barContainer">
+            <div class="barFilling purple"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>Work Experience</h1>
+        <ul class="workEx">
+          <li>
+            <div>
+              <span
+                >Front End Developer at <strong>Unna si Nona Manis</strong>
+              </span>
+              <br />
+              <span class="subWorkEx"
+                >I worked as a Front End Developer for the 'Unna si Nona Manis'
+                project by designing and developing responsive web interfaces.
+                My responsibilities included building user-friendly pages,
+                improving website performance, and creating interactive UI
+                components for the 'Unna si Nona Manis' project. In the 'Unna si
+                Nona Manis' project, I developed the front-end layout using
+                HTML, CSS, JavaScript, and modern frameworks.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="workEx">
+          <li>
+            <div>
+              <span
+                >Front End Developer at <strong>Unna si Nona Manis</strong>
+              </span>
+              <br />
+              <span class="subWorkEx"
+                >I worked as a Front End Developer for the 'Unna si Nona Manis'
+                project by designing and developing responsive web interfaces.
+                My responsibilities included building user-friendly pages,
+                improving website performance, and creating interactive UI
+                components for the 'Unna si Nona Manis' project. In the 'Unna si
+                Nona Manis' project, I developed the front-end layout using
+                HTML, CSS, JavaScript, and modern frameworks.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="workEx">
+          <li>
+            <div>
+              <span
+                >Front End Developer at <strong>Unna si Nona Manis</strong>
+              </span>
+              <br />
+              <span class="subWorkEx"
+                >I worked as a Front End Developer for the 'Unna si Nona Manis'
+                project by designing and developing responsive web interfaces.
+                My responsibilities included building user-friendly pages,
+                improving website performance, and creating interactive UI
+                components for the 'Unna si Nona Manis' project. In the 'Unna si
+                Nona Manis' project, I developed the front-end layout using
+                HTML, CSS, JavaScript, and modern frameworks.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="workEx">
+          <li>
+            <div>
+              <span
+                >Front End Developer at <strong>Unna si Nona Manis</strong>
+              </span>
+              <br />
+              <span class="subWorkEx"
+                >I worked as a Front End Developer for the 'Unna si Nona Manis'
+                project by designing and developing responsive web interfaces.
+                My responsibilities included building user-friendly pages,
+                improving website performance, and creating interactive UI
+                components for the 'Unna si Nona Manis' project. In the 'Unna si
+                Nona Manis' project, I developed the front-end layout using
+                HTML, CSS, JavaScript, and modern frameworks.
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footerHolder">
+      <div class="footerName">&copy; 2026 Ahmad Edwin Alfadin</div>
+    </div>
+  </footer>
+</html>
