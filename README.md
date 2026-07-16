@@ -1,5 +1,7 @@
 # 🌐 CSS Mini Project
 
+Live Demo https://edwinalfadin.github.io/CSS-Mini-Project/
+
 A simple personal profile website built with HTML and CSS. This project demonstrates the fundamentals of web development, including page layout, styling, typography, and responsive design.
 
 ---
