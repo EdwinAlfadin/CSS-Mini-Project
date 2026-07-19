@@ -1,6 +1,8 @@
-# 🌐 CSS Mini Project
+# 🌐 Live Demo
 
-Live Demo https://edwinalfadin.github.io/CSS-Mini-Project/
+🔗 https://edwinalfadin.github.io/CSS-Mini-Project/
+
+# 🌐 CSS Mini Project
 
 A simple personal profile website built with HTML and CSS. This project demonstrates the fundamentals of web development, including page layout, styling, typography, and responsive design.
 
@@ -58,15 +60,6 @@ git clone https://github.com/EdwinAlfadin/CSS-Mini-Project.git
 
 ![Project Preview](home.png)
 
-
----
-
-## 🎯 Learning Objectives
-
-- Practice HTML page structure
-- Learn CSS styling techniques
-- Build a simple personal profile webpage
-- Improve responsive web design skills
 
 ---
 
